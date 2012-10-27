@@ -1,7 +1,10 @@
-root=$(pwd)
-movieset=$1
+# Usage
+# ./makenfo "Movie set name" movie_dir/ 
 
-for file in $root/*.mkv
+movieset=$1
+moviedir=$2
+
+for file in "$moviedir"/*.mkv
 do
   nfofilepath="${file%.*}.nfo"
   filename=$(basename "$file")
