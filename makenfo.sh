@@ -11,7 +11,7 @@ do
   filename_noext="${filename%.*}"
 
   echo "Processing $filename"
-  echo "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n" > "$nfofilepath"
+  echo "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" > "$nfofilepath"
   echo "<movie>" >> "$nfofilepath"
   echo "  <title>$filename_noext</title>" >> "$nfofilepath"
   echo "  <set>$movieset</set>" >> "$nfofilepath"
